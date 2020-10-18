@@ -14,11 +14,13 @@ from flask_pymongo import PyMongo
 
 
 # In[2]:
+def init_browser ():
+    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    browser = Browser('chrome', **executable_path, headless=False)
 
-
-executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
-browser = Browser('chrome', **executable_path, headless=False)
-
+def scrape ():
+    broswer = init_browser ()
+    mars_info = {}
 
 # In[3]:
 
