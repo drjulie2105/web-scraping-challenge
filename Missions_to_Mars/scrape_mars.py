@@ -19,8 +19,8 @@ def init_browser ():
     browser = Browser('chrome', **executable_path, headless=False)
 
 def scrape ():
-    broswer = init_browser ()
-    mars_info = {}
+    browser = init_browser ()
+    mars_dict = {}
 
 # In[3]:
     mars_url = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
