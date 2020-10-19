@@ -15,7 +15,7 @@ from flask_pymongo import PyMongo
 
 # In[2]:
 def init_browser ():
-    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    executable_path = {'executable_path': 'chromedriver.exe'}
     browser = Browser('chrome', **executable_path, headless=False)
 
 def scrape ():
